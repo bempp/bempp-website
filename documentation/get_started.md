@@ -40,7 +40,7 @@ grid.plot()
 
 If all is well, you will now have created and visulaised your grid.
 
-![Your grid](/assets/img/get_started/grid.png)
+![Your grid](/assets/img/get_started/grid.png){: .image-center}
 
 More information about grids can be found in the [grids tutorial](grids.md).
 
@@ -99,7 +99,7 @@ Finally, you can visualise your solution:
 sol.plot()
 ```
 
-![Your solution](/assets/img/get_started/sol.png)
+![Your solution](/assets/img/get_started/sol.png){: .image-center}
 
 <!-- More details of available solvers and their use can be found in the [solving linear systems tutorial](solving.md). -->
 

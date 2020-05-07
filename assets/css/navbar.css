@@ -111,9 +111,15 @@ a.colorlink:hover {
   background-color: #0F79D0
 }
 
+.image-center {
+  max-width: 90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
 .image-right,
 .image-left {
-  width:300px;
+  max-width:300px;
 }
 .image-left {
   float:left;
