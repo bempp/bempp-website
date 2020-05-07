@@ -6,6 +6,7 @@ Bempp is an open-source computational boundary element platform to solve electro
 + Easy formulation of acoustic and electromagnetic transmission problems.
 + CPU and GPU parallelisation.
 + A comprehensive operator algebra that makes it easy to formulate complex product operator formulations such as operator preconditioning.
++ Coupled FEM/BEM computations via interfaces to [FEniCS](https://fenicsproject.org).
 
 ### Latest version: {{site.bemppversion}}
 [Installation instructions](installation.md){: .colorlink}
@@ -17,7 +18,6 @@ Bempp-cl is a complete rewrite of the Bempp library that uses [PyOpenCL](https:/
 This new version is largely feature complete, however the legacy version ([Bempp 3.3.4](bempp334/)) has the following additional features:
 
 + Built-in fast hierarchical matrix compression techniques
-+ Coupled FEM/BEM computations via interfaces to [FEniCS](https://fenicsproject.org).
 
 Documentation for Bempp 3.3.4 is available [here](bempp334).
 
