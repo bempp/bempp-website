@@ -1,0 +1,15 @@
+# Site navigation links
+- title: Home
+  page: index
+
+- title: Installation
+  page: installation
+
+- title: Documentation
+  page: documentation/index
+
+- title: Publications
+  page: publications
+
+- title: Support
+  page: support
