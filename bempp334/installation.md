@@ -70,7 +70,7 @@ This solution is meant only for prototyping.
 For large meshes and advanced visualization options it is recommended to export grids or grid functions as Gmsh files and to view them externally.
 
 ## Building from source
-You can find the source code of Bempp 3.4.4 on [Bitbucket](https://bitbucket.org/bemppsolutions/bempp/src/master/).
+You can find the source code of Bempp 3.4.4 on [GitHub](https://github.com/bempp/bempp-legacy).
 
 Once you have downloaded the source code, you can build it by running the following commands in terminal:
 
