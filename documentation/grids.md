@@ -25,6 +25,7 @@ grid = bempp.api.shapes.sphere(h=0.1)
 ```
 
 The ```shapes``` module contains functions for a number of shapes, including spheres, ellipsoids, cubes, screens, and the Nasa almond shape.
+A full list of the shapes available can be found [here](https://bempp-cl.readthedocs.io/en/latest/docs/bempp/api/shapes/index.html).
 
 ## Creating grids from connectivity data
 If the shape you require is not provided, a grid may be created using connectivity data: arrays containing the nodes (or vertices) and the element definitions.
