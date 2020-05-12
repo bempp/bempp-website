@@ -12,5 +12,7 @@ pip install bempp-cl
 conda install bempp-cl
 ```
 
+More detailed installation instuctions can be found [here](https://bempp-handbook.readthedocs.io/en/latest/content/installation.html).
+
 ## Source code
 You can find the source code of bempp-cl on [GitHub](https://github.com/bempp/bempp-cl).
