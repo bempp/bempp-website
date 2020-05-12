@@ -86,6 +86,8 @@ vertices = grid.vertices
 elements = grid.elements
 ```
 
+If the grid was created using connectivity data, then `vertices` and `elements` will be exactly the input data.
+
 We can also iterate through entities and obtain geometric information about them.
 Iterators may be directly used in for loops.
 
