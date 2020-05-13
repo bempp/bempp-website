@@ -8,6 +8,8 @@ If you are new to Bempp, then we recommend reading [this introduction to Bempp](
 Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](https://bempp-handbook.readthedocs.io/en/latest/).
 This page contains links to the most useful sections of the handbook and to Jupyter notebooks of example applications.
 
+Automatically generated full Python documentation of Bempp can be found on [Read the Docs](https://bempp-cl.readthedocs.io/en/latest/), and may be useful for reference.
+
 Documentation for the older version of Bempp (3.3.4) can be found [here](../bempp334).
 
 ## Getting started
