@@ -8,7 +8,8 @@ Bempp is an open-source computational boundary element platform to solve electro
 + A comprehensive operator algebra that makes it easy to formulate complex product operator formulations such as operator preconditioning.
 + Coupled FEM/BEM computations via interfaces to [FEniCS](https://fenicsproject.org).
 
-### Latest version: [{{site.bemppversion}}](changelog.md)
+### Latest version: {{site.bemppversion}}
+#### ([View Changelog](changelog.md))
 [Installation instructions](installation.md){: .colorlink}
 [Start using Bempp](documentation/get_started.md){: .colorlink}
 [View Source on GitHub](https://github.com/bempp/bempp-cl){: .colorlink}
