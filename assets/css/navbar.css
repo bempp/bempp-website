@@ -165,15 +165,19 @@ a.colorlink:hover {
   width:20px;
 }
 
-.person img {
-  width:150px;
-}
-
-.person {
-  min-height:185px
-}
-
 .person .imgwrap {
   padding-right:20px;
   float:left
+}
+
+.person .imgwrap img {
+  width:150px;
+}
+
+.person .imgwrap, .person .innertext {
+  display:inline-block
+}
+
+.person .innertext {
+  width:530px;
 }
