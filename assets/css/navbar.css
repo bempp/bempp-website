@@ -129,3 +129,51 @@ a.colorlink:hover {
   float:right;
   margin-left:30px
 }
+
+.socialicons {
+  position:absolute;
+  top:5px;
+  right:5px;
+  font-size:30px
+}
+
+.socialicons a,
+.socialicons a:link,
+.socialicons a:active,
+.socialicons a:visited,
+.socialicons a:hover {
+  padding-left:10px;
+}
+.socialicons a,
+.socialicons a:link,
+.socialicons a:active,
+.socialicons a:visited
+ {
+  color:white;
+}
+
+.socialicons a:hover {
+  color:#FF7A1A;
+}
+
+.sociallist {
+  list-style:none;
+  margin-top:10px
+}
+
+.sociallist i.fa {
+  width:20px;
+}
+
+.person img {
+  width:150px;
+}
+
+.person {
+  min-height:185px
+}
+
+.person .imgwrap {
+  padding-right:20px;
+  float:left
+}
