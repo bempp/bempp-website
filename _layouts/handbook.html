@@ -1,0 +1,22 @@
+{% include _head.html %}
+<body>
+{% include _header.html %}
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    {{ title }}
+    {% if page.path != "handbook/index.md" %}
+      {% include _handbook_parent.html %}
+    {% endif %}
+    {% if page.title %}
+        <h2 style='margin-top:0'>{{ page.title }}</h2>
+    {% endif %}
+    {{ content }}
+  </section>
+</div>
+
+{% include _footer.html %}
+
+</body>
+</html>

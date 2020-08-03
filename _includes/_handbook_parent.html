@@ -1,0 +1,22 @@
+{% if {{include.pagepath}} %}
+  {% for article in site.pages %}
+    {% if article.layout == "handbook" %}
+      {% if article.children %}
+        {% for child in article.children %}
+          {% if child == include.pagepath %}
+            {% capture pagepath %}{{ article.path | split: "/" | last}}{% endcapture %}
+            {% include _handbook_parent.html pagepath=pagepath %}
+            <a href='{{article.url}}'>{{article.title}}</a>
+            <i class="fa fa-angle-double-right"></i>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <div class='handbooknav'>
+  {% capture pagepath %}{{ page.path | split: "/" | last }}{% endcapture %}
+  {% include _handbook_parent.html pagepath=pagepath %}
+  {{ page.title }}
+  </div>
+{% endif %}

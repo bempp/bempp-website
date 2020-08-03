@@ -181,3 +181,13 @@ a.colorlink:hover {
 .person .innertext {
   width:530px;
 }
+
+.handbooknav {
+  margin-bottom:10px;
+  padding-bottom:12px;
+  background: url("../images/bg_hr.png") repeat-x bottom;
+}
+.handbooknav i {
+  padding-left:5px;
+  padding-right:5px;
+}
