@@ -1,3 +1,3 @@
 [submodule "bempp-handbook"]
-	path = documentation/handbook
+	path = handbook
 	url = https://github.com/bempp/bempp-handbook.git
