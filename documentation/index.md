@@ -17,13 +17,9 @@ If you are new to Bempp, then we recommend reading these first.
 
 ## The Bempp Handbook
 Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](../handbook/index.md).
-Below you can find links to the most useful sections of the Handbook.
-Writing the Bempp Handbook is currently in progress and more links will be added here as information it is added to the Handbook.
+Writing the Bempp Handbook is currently in progress and more information will appear in it gradually.
 
-+ Grids
-    + [Working with grids](../handbook/grids.md)
-+ Function spaces
-    + [Function spaces](../handbook/function_spaces.md)
+{% include _handbook_contents.html pagepath="index.md" %}
 
 
 ## Example applications

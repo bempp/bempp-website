@@ -3,20 +3,20 @@
     {% if article.layout == "handbook" %}
       {% capture pagepath %}{{ article.path | split: "/" | last}}{% endcapture %}
       {% if pagepath == include.pagepath %}
-        <li><a href='{{ article.url }}'>{{ article.title }}</a></li>
+        {% if pagepath != "index.md" %}
+  <li><a href='{{ article.url }}'>{{ article.title }}</a></li>
+        {% endif %}
         {% if article.children %}
-          <ul>
+<ul>
           {% for child in article.children %}
             {% include _handbook_contents.html pagepath=child %}
           {% endfor %}
-          </ul>
+</ul>
         {% endif %}
       {% endif %}
     {% endif %}
   {% endfor %}
 {% else %}
-  <ul>
   {% capture pagepath %}{{ page.path | split: "/" | last }}{% endcapture %}
   {% include _handbook_contents.html pagepath=pagepath %}
-  </ul>
 {% endif %}
