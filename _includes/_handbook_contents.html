@@ -2,7 +2,7 @@
   {% for article in site.pages %}
     {% if article.layout == "handbook" %}
       {% if article.path == include.pagepath %}
-        {% if include.pagepath != page.path %}
+        {% if include.pagepath != page.path and include.pagepath != "handbook/index.md" %}
   <li><a href='{{ article.url }}'>{{ article.title }}</a></li>
         {% endif %}
         {% if article.children %}
