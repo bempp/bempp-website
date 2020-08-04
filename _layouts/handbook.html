@@ -13,9 +13,24 @@
         <h2 style='margin-top:0'>{{ page.title }}</h2>
     {% endif %}
     {{ content }}
-    {% if page.path != "handbook/index.md" %}
-      {% include _handbook_next_previous.html %}
+    {% if page.children %}
+      {% if page.path == "handbook/index.md" %}
+        <h3>Contents</h3>
+      {% else %}
+        {% for article in site.pages %}
+          {% if article.path == "handbook/index.md" %}
+            {% for child in article.children %}
+              {% capture childpath %}handbook/{{ child }}{% endcapture %}
+              {% if childpath == page.path %}
+                <h3>Contents</h3>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+        {% include _handbook_contents.html %}
     {% endif %}
+    {% include _handbook_next_previous.html %}
   </section>
 </div>
 

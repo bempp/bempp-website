@@ -1,12 +1,12 @@
 {% capture next %}NO{% endcapture %}
 
-{% if include.children != "NO" %}
+{% if include.children %}
+{% else %}
   {% for article in site.pages %}
     {% if article.layout == "handbook" %}
       {% if article.children %}
-        {% capture artpath %}{{ article.path | split: "/" | last }}{% endcapture %}
-        {% if artpath == include.pagepath %}
-          {% capture next %}{{ article.children | first | split: "/" | last }}{% endcapture %}
+        {% if article.path == include.pagepath %}
+          {% capture next %}handbook/{{ article.children | first }}{% endcapture %}
         {% endif %}
       {% endif %}
     {% endif %}
@@ -17,18 +17,18 @@
   {% for article in site.pages %}
     {% if article.layout == "handbook" %}
       {% if article.children %}
-        {% capture artpath %}{{ article.path | split: "/" | last }}{% endcapture %}
         {% for child in article.children %}
+          {% capture childpath %}handbook/{{ child }}{% endcapture %}
           {% if next == "YES" %}
-            {% capture next %}{{ child }}{% endcapture %}
+            {% capture next %}{{ childpath }}{% endcapture %}
           {% endif %}
-          {% if child == include.pagepath %}
+          {% if childpath == include.pagepath %}
             {% capture next %}YES{% endcapture %}
           {% endif %}
         {% endfor %}
         {% if next == "YES" %}
-          {% if artpath != include.pagepath %}
-            {% include _handbook_next.html pagepath=artpath children='NO' %}
+          {% if article.path != include.pagepath %}
+            {% include _handbook_next.html pagepath=article.path children='NO' %}
           {% endif %}
           {% capture next %}NO{% endcapture %}
         {% endif %}
@@ -38,7 +38,7 @@
 {% endif %}
 
 
-{% if next == "NO" %}
+{% if next == "NO" or next == "YES" %}
 &nbsp;
 {% else %}
   {% include _handbook_link.html pagepath=next %}

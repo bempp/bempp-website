@@ -19,7 +19,7 @@ If you are new to Bempp, then we recommend reading these first.
 Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](../handbook/index.md).
 Writing the Bempp Handbook is currently in progress and more information will appear in it gradually.
 
-{% include _handbook_contents.html pagepath="index.md" %}
+{% include _handbook_contents.html pagepath="handbook/index.md" %}
 
 
 ## Example applications

@@ -1,15 +1,15 @@
 {% if {{include.pagepath}} %}
   {% for article in site.pages %}
     {% if article.layout == "handbook" %}
-      {% capture pagepath %}{{ article.path | split: "/" | last}}{% endcapture %}
-      {% if pagepath == include.pagepath %}
-        {% if pagepath != "index.md" %}
+      {% if article.path == include.pagepath %}
+        {% if include.pagepath != page.path %}
   <li><a href='{{ article.url }}'>{{ article.title }}</a></li>
         {% endif %}
         {% if article.children %}
 <ul>
           {% for child in article.children %}
-            {% include _handbook_contents.html pagepath=child %}
+            {% capture childpath %}handbook/{{ child }}{% endcapture %}
+            {% include _handbook_contents.html pagepath=childpath %}
           {% endfor %}
 </ul>
         {% endif %}
@@ -17,6 +17,5 @@
     {% endif %}
   {% endfor %}
 {% else %}
-  {% capture pagepath %}{{ page.path | split: "/" | last }}{% endcapture %}
-  {% include _handbook_contents.html pagepath=pagepath %}
+  {% include _handbook_contents.html pagepath=page.path %}
 {% endif %}

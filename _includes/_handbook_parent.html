@@ -3,9 +3,9 @@
     {% if article.layout == "handbook" %}
       {% if article.children %}
         {% for child in article.children %}
-          {% if child == include.pagepath %}
-            {% capture pagepath %}{{ article.path | split: "/" | last}}{% endcapture %}
-            {% include _handbook_parent.html pagepath=pagepath %}
+          {% capture childpath %}handbook/{{ child }}{% endcapture %}
+          {% if childpath == include.pagepath %}
+            {% include _handbook_parent.html pagepath=article.path %}
             <a href='{{article.url}}'>{{article.title}}</a>
             <i class="fa fa-angle-double-right"></i>
           {% endif %}
@@ -15,8 +15,7 @@
   {% endfor %}
 {% else %}
   <div class='handbooknav'>
-  {% capture pagepath %}{{ page.path | split: "/" | last }}{% endcapture %}
-  {% include _handbook_parent.html pagepath=pagepath %}
+  {% include _handbook_parent.html pagepath=page.path %}
   {{ page.title }}
   </div>
 {% endif %}
