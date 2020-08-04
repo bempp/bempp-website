@@ -44,9 +44,9 @@ You can find the source code of bempp-cl on [GitHub](https://github.com/bempp/be
 Bempp can be installed on any Windows, Mac or Linux system with Python 3.7+.
 The following dependencies are required:
 
-+ numpy
-+ scipy
-+ numba
++ NumPy
++ SciPy
++ Numba
 + meshio
 
 These can be installed with:
