@@ -1,0 +1,33 @@
+{% capture prev %}NO{% endcapture %}
+
+{% for article in site.pages %}
+  {% if article.layout == "handbook" %}
+    {% if article.children %}
+      {% capture firstchild %}{{ article.children | first | split: "/" | last }}{% endcapture %}
+      {% if firstchild == include.pagepath %}
+        {% capture prev %}{{ article.path | split: "/" | last }}{% endcapture %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if prev == "NO" %}
+  {% for article in site.pages %}
+    {% if article.layout == "handbook" %}
+      {% if article.children %}
+        {% for child in article.children %}
+          {% if child == include.pagepath %}
+            {% capture prev %}{% include _handbook_lastchild.html pagepath=prevpage %}{% endcapture %}
+          {% endif %}
+          {% capture prevpage %}{{ child }}{% endcapture %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if prev == "NO" %}
+{% else %}
+<i class="fa fa-angle-double-left"></i>
+{% include _handbook_link.html pagepath=prev %}
+{% endif %}

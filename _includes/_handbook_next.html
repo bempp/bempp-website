@@ -1,0 +1,49 @@
+{% capture next %}NO{% endcapture %}
+
+{% if include.children != "NO" %}
+  {% for article in site.pages %}
+    {% if article.layout == "handbook" %}
+      {% if article.children %}
+        {% capture artpath %}{{ article.path | split: "/" | last }}{% endcapture %}
+        {% if artpath == include.pagepath %}
+          {% capture next %}{{ article.children | first | split: "/" | last }}{% endcapture %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if next == "NO" %}
+  {% for article in site.pages %}
+    {% if article.layout == "handbook" %}
+      {% if article.children %}
+        {% capture artpath %}{{ article.path | split: "/" | last }}{% endcapture %}
+        {% for child in article.children %}
+          {% if next == "YES" %}
+            {% capture next %}{{ child }}{% endcapture %}
+          {% endif %}
+          {% if child == include.pagepath %}
+            {% capture next %}YES{% endcapture %}
+          {% endif %}
+        {% endfor %}
+        {% if next == "YES" %}
+          {% if artpath != include.pagepath %}
+            {% include _handbook_next.html pagepath=artpath children='NO' %}
+          {% endif %}
+          {% capture next %}NO{% endcapture %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+{% if next == "NO" %}
+&nbsp;
+{% else %}
+  {% include _handbook_link.html pagepath=next %}
+  <i class="fa fa-angle-double-right"></i>
+{% endif %}
+
+        
+

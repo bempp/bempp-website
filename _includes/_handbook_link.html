@@ -1,0 +1,8 @@
+{% for article in site.pages %}
+  {% if article.layout == "handbook" %}
+    {% capture artpath %}{{ article.path | split: "/" | last }}{% endcapture %}
+    {% if artpath == include.pagepath %}
+<a href='{{article.url}}'>{{article.title}}</a>
+    {% endif %}
+  {% endif %}
+{% endfor %}

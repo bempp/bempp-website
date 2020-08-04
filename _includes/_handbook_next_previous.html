@@ -1,0 +1,13 @@
+<div class='handbookprevnext'>
+{% capture pagepath %}{{ page.path | split: "/" | last }}{% endcapture %}
+<table class='invisible' width='100%'>
+<tr>
+<td style='text-align:left'>
+{% include _handbook_previous.html pagepath=pagepath %}
+</td>
+<td style='text-align:right'>
+{% include _handbook_next.html pagepath=pagepath %}
+</td>
+</tr>
+</table>
+</div>

@@ -13,6 +13,9 @@
         <h2 style='margin-top:0'>{{ page.title }}</h2>
     {% endif %}
     {{ content }}
+    {% if page.path != "handbook/index.md" %}
+      {% include _handbook_next_previous.html %}
+    {% endif %}
   </section>
 </div>
 
