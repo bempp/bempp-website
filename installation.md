@@ -10,11 +10,20 @@ If you want to use Bempp without installing it directly on your computer, you ca
 Jupyter notebook lab containing Bempp using Docker. To do this, run the following commands:
 
 ```bash
-docker pull mscroggs/bempp-cl-notebook:latest
-docker run -p 8888:8888 mscroggs/bempp-cl-notebook
+docker pull bempp/cl-notebook:latest
+docker run -p 8888:8888 bempp/cl-notebook
 ```
 
 Instructions for opening your Jupyter lab in a web browser will then be output to your terminal.
+
+In order to share a directory with the docker image, replace the second command with:
+```bash
+docker pull bempp/cl-notebook:latest
+docker run -v /path/to/folder:/root/shared -p 8888:8888 bempp/cl-notebook
+```
+The folder `/path/to/folder` on your computer will then be visible as `shared` in the
+root directory of the Jupyter lab.
+
 
 ## Quick install
 The latest version of Bempp can be installed using `pip`:
