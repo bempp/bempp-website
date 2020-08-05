@@ -207,5 +207,15 @@ table.invisible,
 table.invisible td,
 table.invisible tr
 {
-    margin:0px; padding:0px; border:none
+  margin:0px;
+  padding:0px;
+  border:none
+}
+
+img.smaller
+{
+  max-height: 200px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
