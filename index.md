@@ -42,16 +42,16 @@ However, in order to ensure that solutions can be obtained in a reasonable amoun
 More information about this application can be found in [Scroggs _et al_ (2017)](publications.md#Scroggs2017) and in its example scripts.
 
 ## Development
-Bempp is developed at [University College London](http://www.ucl.ac.uk) and [Pontificia Universidad Católica de Chile](http://www.uc.cl).
-The [current development team](team.md) includes [Simon Arridge](http://cmic.cs.ucl.ac.uk/staff/simon_arridge/), [Timo Betcke](https://sites.google.com/site/timobetcke/),
-[Matthew Scroggs](http://www.mscroggs.co.uk) and [Elwin Van 't Wout](http://www.ing.uc.cl/cuerpo-docente/van-t-wout/).
-Much of the original work on Bempp was done by Wojciech Śmigaj, now at Simpleware Ltd.
+Bempp is developed at [University College London](http://www.ucl.ac.uk) and [the University of Cambridge](https://www.cam.ac.uk/).
+The [current development team](team.md) [Timo Betcke](https://sites.google.com/site/timobetcke/) and [Matthew Scroggs](http://www.mscroggs.co.uk).
+Past contributors to the library include [Simon Arridge](http://cmic.cs.ucl.ac.uk/staff/simon_arridge/), [Elwin Van 't Wout](http://www.ing.uc.cl/cuerpo-docente/van-t-wout/),
+and Wojciech Śmigaj.
 You can find more information about the development team [here](team.md).
 
 We are very grateful for the substantial contributions of the [UCL Research Software Development Team](http://www.ucl.ac.uk/research-it-services/about/research-software-development) to the code itself,
 the installers and the testing environment.
 Bempp is supported by [EPSRC](http://www.epsrc.ac.uk/) Grants EP/I030042/1 and EP/K03829X/1.
-We would also like to acknowledge support from the [Dune Project](https://www.dune-project.org/) for the integration of Dune into Bempp
+We would also like to acknowledge support from the [Dune Project](https://www.dune-project.org/) for the integration of Dune into past versions of Bempp
 and the [HyENA Team](http://portal.tugraz.at/portal/page/portal/Files/i2610/files/Forschung/Software/HyENA/html/index.html) at Graz University of Technology who provided definitions
 of the core integration rules to the project.
 
