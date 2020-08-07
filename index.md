@@ -49,7 +49,7 @@ and Wojciech Śmigaj.
 You can find more information about the development team [here](team.md).
 
 Bempp is supported by [EPSRC](http://www.epsrc.ac.uk/) Grants EP/I030042/1 and EP/K03829X/1.
-We would like to acknowledge support from
+We would like to thank
 the [ExaFMM team](https://github.com/exafmm/exafmm-t) for their help integrating their library into Bempp and
 the [HyENA team](http://portal.tugraz.at/portal/page/portal/Files/i2610/files/Forschung/Software/HyENA/html/index.html) at Graz University of Technology who provided definitions
 of the core integration rules to the project.
