@@ -48,12 +48,14 @@ Past contributors to the library include [Simon Arridge](http://cmic.cs.ucl.ac.u
 and Wojciech Śmigaj.
 You can find more information about the development team [here](team.md).
 
-We are very grateful for the substantial contributions of the [UCL Research Software Development Team](http://www.ucl.ac.uk/research-it-services/about/research-software-development) to the code itself,
-the installers and the testing environment.
 Bempp is supported by [EPSRC](http://www.epsrc.ac.uk/) Grants EP/I030042/1 and EP/K03829X/1.
-We would also like to acknowledge support from the [Dune Project](https://www.dune-project.org/) for the integration of Dune into past versions of Bempp
-and the [HyENA Team](http://portal.tugraz.at/portal/page/portal/Files/i2610/files/Forschung/Software/HyENA/html/index.html) at Graz University of Technology who provided definitions
+We would like to acknowledge support from
+the [ExaFMM team](https://github.com/exafmm/exafmm-t) for their help integrating their library into Bempp and
+the [HyENA team](http://portal.tugraz.at/portal/page/portal/Files/i2610/files/Forschung/Software/HyENA/html/index.html) at Graz University of Technology who provided definitions
 of the core integration rules to the project.
+
+Past versions of Bempp were aided by from the [Dune Project](https://www.dune-project.org/)
+and the [UCL Research Software Development Team](http://www.ucl.ac.uk/research-it-services/about/research-software-development).
 
 ## Licensing
 Bempp is covered by an MIT licence. The full licence can be read [here](https://github.com/bempp/bempp-cl/blob/master/LICENSE.md).
