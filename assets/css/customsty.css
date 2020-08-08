@@ -219,3 +219,11 @@ img.smaller
   margin-left: auto;
   margin-right: auto;
 }
+
+li.bigsection
+{
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-size:18px;
+  margin-top:20px;
+  font-weight:bold
+}
