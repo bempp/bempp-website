@@ -1,6 +1,15 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.2.1](https://github.com/bempp/bempp-cl/releases/tag/v0.2.1)
+Small patch release with the following fixes:
+
+- A proper error message is now given if Exafmm is not available.
+- Numba now does not produce an error message in single-precision.
+- Fixed the issue that evaluation points had to be handed over as the correct data type to Bempp.
+- VTK Export now does not produce errors
+- The Maxwell dieelectric notebook was updated for Bempp-cl 0.2
+
 ## [Bempp-cl 0.2.0](https://github.com/bempp/bempp-cl/releases/tag/v0.2.0)
 This release contains a number of major improvements:
 
