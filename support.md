@@ -7,7 +7,7 @@ You may find that someone else has reported the bug and a fix has been posted.
 If your bug does not appear there, please [add it](https://github.com/bempp/bempp-cl/issues/new).
 
 If you have need help using Bempp, have a questions about its features, or want to tell other users about the awesome application you've been working on,
-please post on our [Google group / mailing list](https://groups.google.com/forum/#!forum/bempp).
+please post on our [Discourse](https://bempp.discourse.group).
 You can also subscribe to this mailing list to receive updates about new developments of the library.
 
 ## Commercial support

@@ -5,7 +5,7 @@ title: Documentation
 Welcome to the documentation for the latest version of Bempp ({{site.bemppversion}}).
 Automatically generated full Python documentation of Bempp can be found on [Read the Docs](https://bempp-cl.readthedocs.io/en/latest/), and may be useful for reference.
 
-If your query is not answered by the information available here, you post it on our [Google group / mailing list](https://groups.google.com/forum/#!forum/bempp).
+If your query is not answered by the information available here, you post it on our [Discourse](https://bempp.discourse.group).
 
 Documentation for the older version of Bempp (3.3.4) can be found [here](../bempp334).
 
