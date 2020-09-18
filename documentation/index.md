@@ -16,10 +16,8 @@ If you are new to Bempp, then we recommend reading these first.
 + [Solving your first problem](get_started.md)
 
 ## The Bempp Handbook
-Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](../handbook/index.md).
+Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](../handbook/index.html).
 Writing the Bempp Handbook is currently in progress and more information will appear in it gradually.
-
-{% include _handbook_contents.html pagepath="handbook/index.md" maxdepth=2 %}
 
 ## Example applications
 A number of Jupyter notebook of example applications are included in the bempp-cl [GitHub repository](https://github.com/bempp/bempp-cl/tree/master/notebooks).

@@ -10,3 +10,5 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
+include: ["handbook","_images","_sources","_static"]
