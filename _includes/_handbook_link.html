@@ -1,7 +1,0 @@
-{% for article in site.pages %}
-  {% if article.layout == "handbook" %}
-    {% if article.path == include.pagepath %}
-<a href='{{article.url}}'>{{article.title}}</a>
-    {% endif %}
-  {% endif %}
-{% endfor %}
