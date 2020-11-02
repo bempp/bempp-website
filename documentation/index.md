@@ -29,6 +29,7 @@ They can also be viewed online by following the links below.
     + [Computing the capacity of a cube with a re-entrant corner](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/laplace/reentrant_cube_capacity.ipynb)
 + Helmholtz
     + [Scattering from a sphere using a combined direct formulation](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/helmholtz/helmholtz_combined_exterior.ipynb)
+    + [BEM-BEM Coupling using a simple multitrace formulation](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/helmholtz/bem_bem_multitrace_coupling.ipynb)
     + [Simple FEM-BEM coupling for the Helmholtz equation](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/helmholtz/simple_helmholtz_fem_bem_coupling.ipynb)
 + Maxwell
     + [Electromagnetic scattering from flat screens](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/maxwell/maxwell_screen.ipynb)
