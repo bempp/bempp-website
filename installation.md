@@ -67,13 +67,13 @@ Some features will not work without the following dependencies:
 
 + plotly
 + pyopencl
-+ [gmsh](https://gmsh.info)
++ [gmsh](https://gmsh.info) (tested with version 4.6.0)
 + [exafmm](https://github.com/exafmm/exafmm-t)
 
 These can be installed with:
 
 ```bash
-pip install plotly pyopencl gmsh
+pip install plotly pyopencl gmsh==4.6.0
 
 git clone https://github.com/exafmm/exafmm-t.git
 cd exafmm-t
