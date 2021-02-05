@@ -2,7 +2,7 @@
 title: Tutorials & example applications
 ---
 
-A number of Jupyter notebook of example applications are included in the bempp-cl [GitHub repository](https://github.com/bempp/bempp-cl/tree/master/notebooks).
+A number of Jupyter notebook of example applications are included in the Bempp-cl [GitHub repository](https://github.com/bempp/bempp-cl/tree/master/notebooks).
 They can also be viewed online by following the links below.
 
 ## Laplace
