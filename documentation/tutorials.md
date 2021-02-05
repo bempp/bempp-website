@@ -30,7 +30,7 @@ of Helmholtz operators and plotting of a 2D slice of the solution.
 This tutorial demonstrates a use of Bempp to solve a domain decomposition problem, including the use
 of blocked operators.
 
-### [Simple FEM-BEM coupling with FEniCS for the Helmholtz equation](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/helmholtz/simple_helmholtz_fem_bem_coupling_dolfinx.ipynb)
+### [Simple FEM-BEM coupling with FEniCS-X for the Helmholtz equation](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/master/notebooks/helmholtz/simple_helmholtz_fem_bem_coupling_dolfinx.ipynb)
 This tutorial demonstrates how Bempp can be used in combination with [FEniCS-X](https://fenicsproject.org/)
 (the latest version of FEniCS) to solve a FEM-BEM coupled problem.
 
