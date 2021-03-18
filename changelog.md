@@ -1,6 +1,11 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.2.3](https://github.com/bempp/bempp-cl/releases/tag/v0.2.3)
+Added FEM-BEM coupling with DOLFINx.
+Added `to_sparse` and `to_dense` methods to discrete operators.
+
+This version is linked to the Bempp-cl JOSS paper.
 ## [Bempp-cl 0.2.2](https://github.com/bempp/bempp-cl/releases/tag/v0.2.2)
 Assembly using the "novec" mode does not crash anymore.
 ## [Bempp-cl 0.2.1](https://github.com/bempp/bempp-cl/releases/tag/v0.2.1)
