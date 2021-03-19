@@ -7,7 +7,24 @@ If you use Bempp in your research, we would be grateful if you cite the relevant
 This list is also available in [BibTeΧ format](assets/bempp.bib).
 
 ## Main citations
-The following paper is the main citation for the Bempp library.
+
+The following paper is the main citation for the Bempp library. This paper is based on Bempp-cl.
+{% include _paper.html
+    id="BetckeScroggs2021"
+    author="T. Betcke & M. Scroggs"
+    title="Bempp-cl: A fast Python based just-in-time compiling boundary element library."
+    journal="Journal of Open Source Software"
+    volume="6"
+    number="59"
+    year="2021"
+    pagestart="2879"
+    doi="10.21105/joss.02879"
+%}
+
+To see a large number of applications of Bempp, take a look at [the list of papers that cite any of the three main Bempp papers on Google Scholar](https://scholar.google.co.uk/scholar?cites=17530791602214284423,11433496395088984366,149600224103853667,3529577898501410539).
+
+### Older versions of Bempp
+The following paper was the main citation for older versions of the Bempp library.
 Please note that this paper is based on Bempp 2.0 with an incompatible syntax to the current version.
 {% include _paper.html
     id="Smigaj2015"
@@ -22,8 +39,6 @@ Please note that this paper is based on Bempp 2.0 with an incompatible syntax to
     pdf="http://discovery.ucl.ac.uk/1380119/2/a6-smigaj.pdf"
     doi="10.1145/2590830"
 %}
-
-To see a large number of applications of Bempp, take a look at [the list of papers that cite this paper on Google Scholar](https://scholar.google.co.uk/scholar?cites=17530791602214284423,11433496395088984366).
 
 ### Maxwell's equations
 The main citation for using Bempp to solve electromagnetic problems is the following paper.
@@ -43,6 +58,19 @@ The main citation for using Bempp to solve electromagnetic problems is the follo
 %}
 
 ## List of publications by year
+### 2021
+{% include _paper.html
+    id="BetckeScroggs2021"
+    author="T. Betcke & M. Scroggs"
+    title="Bempp-cl: A fast Python based just-in-time compiling boundary element library."
+    journal="Journal of Open Source Software"
+    volume="6"
+    number="59"
+    year="2021"
+    pagestart="2879"
+    doi="10.21105/joss.02879"
+%}
+
 ### 2020
 {% include _paper.html
     id="Betcke2020"
