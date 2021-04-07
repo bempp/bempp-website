@@ -11,7 +11,7 @@ This list is also available in [BibTeΧ format](assets/bempp.bib).
 The following paper is the main citation for the Bempp library. This paper is based on Bempp-cl.
 {% include _paper.html
     id="BetckeScroggs2021"
-    author="T. Betcke & M. Scroggs"
+    author="T. Betcke & M. W. Scroggs"
     title="Bempp-cl: A fast Python based just-in-time compiling boundary element library."
     journal="Journal of Open Source Software"
     volume="6"
@@ -60,7 +60,7 @@ The main citation for using Bempp to solve electromagnetic problems is the follo
 ## List of publications by year
 ### 2021
 {% include _paper.html
-    author="T. Betcke & M. Scroggs"
+    author="T. Betcke & M. W. Scroggs"
     title="Bempp-cl: A fast Python based just-in-time compiling boundary element library."
     journal="Journal of Open Source Software"
     volume="6"
