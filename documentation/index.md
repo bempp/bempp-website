@@ -19,7 +19,7 @@ If you are new to Bempp, then we recommend reading these first.
 Full documentation for the latest version of Bempp ({{site.bemppversion}}) can be found in [the Bempp Handbook](../handbook/index.html).
 Writing the Bempp Handbook is currently in progress and more information will appear in it gradually.
 
-## Bempp acoustics exercices
+## Bempp acoustics exercises
 Matthew Scroggs and Jonathan Hargreaves have written some tutorials and exercises
 demonstrating Bempp-cl's use to solve problems in acoustics. These can be found at
 [github.com/mscroggs/bempp-acoustic-tutorials](https://github.com/mscroggs/bempp-acoustic-tutorials)
