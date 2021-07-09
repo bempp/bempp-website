@@ -1,6 +1,8 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.2.4](https://github.com/bempp/bempp-cl/releases/tag/v0.2.4)
+A number of bugfixes.
 ## [Bempp-cl 0.2.3](https://github.com/bempp/bempp-cl/releases/tag/v0.2.3)
 Added FEM-BEM coupling with DOLFINx.
 Added `to_sparse` and `to_dense` methods to discrete operators.
