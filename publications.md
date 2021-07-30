@@ -61,13 +61,24 @@ The main citation for using Bempp to solve electromagnetic problems is the follo
 ### 2021
 {% include _paper.html
     author="T. Betcke & M. W. Scroggs"
-    title="Bempp-cl: A fast Python based just-in-time compiling boundary element library."
+    title="Bempp-cl: A fast Python based just-in-time compiling boundary element library"
     journal="Journal of Open Source Software"
     volume="6"
     number="59"
     year="2021"
     pagestart="2879"
     doi="10.21105/joss.02879"
+%}
+{% include _paper.html
+    author="T. Betcke & M. W. Scroggs"
+    title="Designing a high-performance boundary element library with OpenCL and Numba"
+    journal="IEEE Computing in Science & Engineering"
+    volume="23"
+    number="4"
+    year="2021"
+    pagestart="18"
+    pageend="28"
+    doi="10.1109/MCSE.2021.3085420"
 %}
 
 ### 2020
