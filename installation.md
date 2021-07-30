@@ -25,10 +25,17 @@ root directory of the Jupyter lab.
 
 
 ## Quick install
-The latest version of Bempp can be installed using `pip`:
+The latest release of Bempp can be installed using `pip`:
 
 ```bash
 pip install bempp-cl
+```
+
+Alternatively, the latest development version of Bempp can be installed using `pip`:
+
+```bash
+pip install numpy scipy numba meshio>=4.0.16 gmsh==4.6.0
+pip install git+https://github.com/bempp/bempp-cl.git
 ```
 
 Alternatively, you can install Bempp using `conda`.
