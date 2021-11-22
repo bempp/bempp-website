@@ -4,7 +4,7 @@ title: Solving your first problem with Bempp
 
 This page gives and overview of Bempp, and guides you through solving your first Laplace problem.
 
-Before following this tutorial, you will need to [install Bempp](installation.md).
+Before following this tutorial, you will need to [install Bempp](../installation.md).
 Once you have Bempp installed, open a Jupyter notebook or a Python or IPython terminal and you are ready to begin.
 
 ### Importing Bempp
