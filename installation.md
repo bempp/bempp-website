@@ -23,6 +23,17 @@ docker run -v /path/to/folder:/root/shared -p 8888:8888 bempp/cl-notebook
 The folder `/path/to/folder` on your computer will then be visible as `shared` in the
 root directory of the Jupyter lab.
 
+### Running Numba-only Docker image
+On some systems, running OpenCL inside a Docker image can cause issues with drivers. Typically,
+this will cause errors to be thrown when trying to import Bempp. If you experience this, you can
+run the Numba-only Bempp Docker image using the following commands:
+
+```bash
+docker pull bempp/cl-notebook-numba:latest
+docker run -p 8888:8888 bempp/cl-notebook-numba
+```
+
+A folder can be shared with the image in the same way as above.
 
 ## Quick install
 The latest release of Bempp can be installed using `pip`:
