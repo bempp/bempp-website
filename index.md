@@ -58,4 +58,4 @@ Past versions of Bempp were aided by from the [Dune Project](https://www.dune-pr
 and the [UCL Research Software Development Team](http://www.ucl.ac.uk/research-it-services/about/research-software-development).
 
 ## Licensing
-Bempp is covered by an MIT licence. The full licence can be read [here](https://github.com/bempp/bempp-cl/blob/master/LICENSE.md).
+Bempp is covered by an MIT licence. The full licence can be read [here](https://github.com/bempp/bempp-cl/blob/main/LICENSE.md).
