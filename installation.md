@@ -63,6 +63,17 @@ You can then install Bempp with:
 conda install bempp-cl
 ```
 
+**We noticed some recent problems with Bempp and the pocl driver available in conda,
+which can lead to segfaults. We are in the process of updating the conda environment to
+solve these problems. We strongly recommend use of the Docker image instead. Alternatively,
+you can attempt the following fix within the conda environment.**
+
+```
+conda uninstall pocl
+conda installl intel-opencl-rt
+```
+
+
 ## Installing from Source
 You can find the source code of bempp-cl on [GitHub](https://github.com/bempp/bempp-cl).
 
@@ -74,6 +85,10 @@ The following dependencies are required:
 + SciPy
 + Numba
 + meshio
+
+Please note that this installs only a slow base environment. To profit from fast compute kernels
+via OpenCL we strongly recommend to use the Docker image. Alternatively, read the section on OpenCL
+further below.
 
 These can be installed with:
 
@@ -124,14 +139,14 @@ following a few important remarks about OpenCL runtime environments.
 
 + Most GPU devices are much faster in single precision and we do not
   advise using Bempp in double precision on such devices.
-+ If Pocl is used we require at least version 1.3. The package in the
-  current Ubuntu 18.04 LTS release is older and does not yet support Bempp-cl.
++ If Pocl is used we recommend version 1.3 or 1.4. Earlier versions are not supported
+  and we noticed segfaults in more recent versions of pocl in conjunction with Bempp-cl
+  kernels. The pocl version delivered with Ubuntu 20.04 works well. **Please be careful
+  with conda as the automatically installed version of pocl from conda does not work with
+  Bempp-cl.**
++ Recent versions of the Intel OpenCL CPU runtiime environment also work well. This can
+  be installed in conda with `conda install intel-opencl-rt`.
 + The Apple CPU runtime environment is not compatible with Bempp-cl.
-
-We provide quick installation instructions with Pocl, but also test regularly
-with AMD and Nvidia runtime environments. This quick installation creates a
-working installation based on the Pocl ICD (Installable Client Driver). For the
-activation of other ICDs (e.g. from AMD or Nvidia) see further below.
 
 #### Using other compute devices
 Any compute device that provides a valid ICD can
