@@ -18,4 +18,4 @@ We are offering a range of commercial services around Bempp, including:
 + Adaption to specific applications
 + Integration into existing simulation workflows
 
-If you are interested in these or other commercial services around Bempp feel free to contact [Timo](team.md) directly ([tbetcke@ucl.ac.uk](mailto:t.betcke@ucl.ac.uk)) to discuss your requirements.
+If you are interested in these or other commercial services around Bempp feel free to contact [Timo](team.md) directly ([t.betcke@ucl.ac.uk](mailto:t.betcke@ucl.ac.uk)) to discuss your requirements.
