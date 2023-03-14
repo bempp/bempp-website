@@ -38,6 +38,9 @@ This tutorial demonstrates how Bempp can be used in combination with [FEniCSx](h
 This tutorial demonstrates how Bempp can be used in combination with [FEniCS](https://fenicsproject.org/)
 (an older version of FEniCS) to solve a FEM-BEM coupled problem.
 
+### [osrc_burton_miller.ipynb](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/main/notebooks/helmholtz/osrc_burton_miller.ipynb)
+This tutorial demonstrates how an OSRC (on-surface radiation condition) preconditioner can be used for Helmholtz problems.
+
 ## Maxwell
 ### [Electromagnetic scattering from flat screens](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/main/notebooks/maxwell/maxwell_screen.ipynb)
 This tutorial demonstrates an application of Bempp to Maxwell wave scattering from a screen,
