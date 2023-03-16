@@ -43,7 +43,7 @@ More information about this application can be found in [Scroggs _et al_ (2017)]
 
 ## Development
 Bempp is developed at [University College London](http://www.ucl.ac.uk) and [the University of Cambridge](https://www.cam.ac.uk/).
-The [current development team](team.md) includes [Timo Betcke](https://timobetcke.me) and [Matthew Scroggs](http://www.mscroggs.co.uk).
+The [current development team](team.md) includes [Timo Betcke](http://timobetcke.me) and [Matthew Scroggs](https://www.mscroggs.co.uk).
 Past contributors to the library include [Simon Arridge](http://cmic.cs.ucl.ac.uk/staff/simon_arridge/), [Elwin Van 't Wout](http://www.ing.uc.cl/cuerpo-docente/van-t-wout/),
 and Wojciech Śmigaj.
 You can find more information about the development team [here](team.md).

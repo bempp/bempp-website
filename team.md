@@ -7,9 +7,19 @@ title: The Bempp Team
     name="Timo Betcke"
     about="Timo is a Professor of Computational Mathematics at University College London."
     bemppabout="Timo is the lead developer of Bempp."
-    website="https://sites.google.com/site/timobetcke/"
+    website="http://timobetcke.me"
     email="t.betcke@ucl.ac.uk"
     github="tbetcke"
+%}
+
+{% include _person.html
+    img="assets/img/kailasa.jpg"
+    name="Srinath Kailasa"
+    about="Srinath is a PhD student at University College London."
+    bemppabout="His research interests span high performance computing, and his main contributions to the distributed octree and fast-multipole crates in [Bempp-rs](https://github.com/bempp/bempp-rs)."
+    email="ucapska@ucl.ac.uk"
+    github="skailasa"
+    twitter="SrinathKailasa"
 %}
 
 {% include _person.html
@@ -19,7 +29,7 @@ title: The Bempp Team
     bemppabout="Matthew's contributions to Bempp include the implementation of [FEM-BEM coupling](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/main/notebooks/helmholtz/simple_helmholtz_fem_bem_coupling.ipynb),
                 work on [Maxwell's equations](publications.md#Scroggs2017),
                 and the [weak imposition of boundary conditions](publications.md#Betcke2019)."
-    website="http://mscroggs.co.uk"
+    website="https://mscroggs.co.uk"
     email="mws48@cam.ac.uk"
     twitter="mscroggs"
     github="mscroggs"
