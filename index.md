@@ -22,6 +22,10 @@ This new version is largely feature complete, however the legacy version ([Bempp
 
 Documentation for Bempp 3.3.4 is available [here](bempp334).
 
+## Bempp-rs
+Bempp-rs is the latest (in early progress) rewrite ofthe Bempp library, written in Rust with a Python wrapper.
+This version can be found on [GitHub](https://github.com/bempp/bempp-rs) with documentation at [bempp.github.io/bempp-rs](https://bempp.github.io/bempp-rs/).
+
 ## Example applications
 ### High-intensity focused ultrasound
 ![High-intensity focused ultrasound](assets/img/hifu.png){: .image-right }
