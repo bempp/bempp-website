@@ -2,7 +2,7 @@ theme: jekyll-theme-slate
 site_favicon: favicon.ico
 title: Bempp
 description: Boundary element method Python package
-bemppversion: Bempp-cl 0.2.4
+bemppversion: Bempp-cl 0.3.0
 
 defaults:
   -
