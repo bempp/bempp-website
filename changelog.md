@@ -1,6 +1,12 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.3.0](https://github.com/bempp/bempp-cl/releases/tag/v0.3.0)
+- Added ORSC operators for Helmholtz
+- Added MtE Pade operator
+- Added ORSC preconditioned Burton-Miller example
+- Updated FEniCSx interface to be compatible with newer versions
+- Various bugfixes
 ## [Bempp-cl 0.2.4](https://github.com/bempp/bempp-cl/releases/tag/v0.2.4)
 A number of bugfixes.
 ## [Bempp-cl 0.2.3](https://github.com/bempp/bempp-cl/releases/tag/v0.2.3)
