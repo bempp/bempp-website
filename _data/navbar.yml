@@ -1,21 +1,21 @@
 # Site navigation links
-- title: Home
+- title: home
   page: index
 
-- title: Installation
+- title: installation
   page: installation
 
-- title: Documentation
+- title: documentation
   page: documentation/index
 
-- title: Tutorials
+- title: tutorials
   page: documentation/tutorials
 
-- title: Publications
+- title: publications
   page: publications
 
-- title: Support
+- title: support
   page: support
 
-- title: The team
+- title: the team
   page: team
