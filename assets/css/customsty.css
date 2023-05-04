@@ -10,23 +10,19 @@ dark grey:  #555555
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align:center;
 }
 
 .nav li {
-  float: left;
+  display: inline-block;
   font-variant:small-caps;
   font-weight:bold;
   font-size:20px;
 }
 
-.nav li:first-of-type a {
-  border-radius: 15px 0px 0px 0px;
-}
-.nav li:last-of-type a {
-  border-radius: 0px 15px 0px 0px;
-}
-
 .nav li a {
+  border-radius: 15px;
+  margin:4px
   padding: 12px;
   padding-right: 16px;
   padding-left: 16px;
