@@ -10,9 +10,11 @@ Bempp is an open-source computational boundary element platform to solve electro
 
 ### Latest version: {{site.bemppversion}}
 #### ([View Changelog](changelog.md))
+<center>
 [Installation instructions](installation.md){: .colorlink}
 [Start using Bempp](documentation/get_started.md){: .colorlink}
 [View Source on GitHub](https://github.com/bempp/bempp-cl){: .colorlink}
+</center>
 
 ## Bempp-cl
 Bempp-cl is a complete rewrite of the Bempp library that uses [PyOpenCL](https://documen.tician.de/pyopencl/) for just-in-time compilation of computational kernels.
