@@ -1,6 +1,12 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.3.1](https://github.com/bempp/bempp-cl/releases/tag/v0.3.1)
+- Corrected plotting of vector-valued elements
+- Updated FEniCSx interface to work with both main branch and version 0.6.0
+- Various bugfixes
+
+
 ## [Bempp-cl 0.3.0](https://github.com/bempp/bempp-cl/releases/tag/v0.3.0)
 - Added ORSC operators for Helmholtz
 - Added MtE Pade operator
