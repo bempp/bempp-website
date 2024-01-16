@@ -25,12 +25,12 @@ title: The Bempp Team
 {% include _person.html
     img="assets/img/scroggs.jpg"
     name="Matthew Scroggs"
-    about="Matthew is a Postdoctoral Research Associate at the University of Cambridge."
+    about="Matthew is a Postdoctoral Research Fellow at the University College London."
     bemppabout="Matthew's contributions to Bempp include the implementation of [FEM-BEM coupling](https://nbviewer.jupyter.org/github/bempp/bempp-cl/blob/main/notebooks/helmholtz/simple_helmholtz_fem_bem_coupling.ipynb),
                 work on [Maxwell's equations](publications.md#Scroggs2017),
                 and the [weak imposition of boundary conditions](publications.md#Betcke2019)."
     website="https://mscroggs.co.uk"
-    email="mws48@cam.ac.uk"
+    email="matthew.scroggs.14@ucl.ac.uk"
     twitter="mscroggs"
     github="mscroggs"
 %}
