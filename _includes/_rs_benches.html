@@ -1,32 +1,18 @@
 <div id='benchall'></div>
 <script type='text/javascript'>
 var line0 = {
-  x: ["2024-01-16 14:37", "2024-01-16 15:30", "2024-01-16 15:35", "2024-01-16 15:59", "2024-01-16 16:02", "2024-01-17"],
-  y: [0.5803205652000001, 0.59425553025, 0.60851375525, 0.62800658715, 0.5982105684, 0.0623262980625],
+  x: ["2024-01-17"],
+  y: [0.061516774010000004],
   type: 'scatter',
   mode: 'lines+markers',
   name: "assembly/Assembly of non-singular terms of 2048x2048 matrix"
 };
 var line1 = {
-  x: ["2024-01-16 14:37", "2024-01-16 15:30", "2024-01-16 15:35", "2024-01-16 15:59", "2024-01-16 16:02", "2024-01-17"],
-  y: [0.04047975359066327, 0.03995195155685345, 0.03951187487848461, 0.040186450191764485, 0.04307989505346732, 0.0217807705111606],
+  x: ["2024-01-17"],
+  y: [0.020946872716817437],
   type: 'scatter',
   mode: 'lines+markers',
   name: "assembly/Assembly of non-singular terms of 512x512 matrix"
-};
-var line2 = {
-  x: ["2024-01-16 16:02"],
-  y: [2.10368416195],
-  type: 'scatter',
-  mode: 'lines+markers',
-  name: "assembly/Assembly of singular terms of 2048x2048 matrix"
-};
-var line3 = {
-  x: ["2024-01-16 16:02"],
-  y: [1.0123497385],
-  type: 'scatter',
-  mode: 'lines+markers',
-  name: "assembly/Assembly of singular terms of 512x512 matrix"
 };
 var layout = {
   showlegend: true,
@@ -36,5 +22,5 @@ var layout = {
   yaxis: {title: 'Time (s)'},
   margin: {t: 15}
 };
-Plotly.newPlot('benchall', [line0, line1, line2, line3], layout);
+Plotly.newPlot('benchall', [line0, line1], layout);
 </script>
