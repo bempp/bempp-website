@@ -1,18 +1,32 @@
 <div id='benchall'></div>
 <script type='text/javascript'>
 var line0 = {
-  x: ["2024-01-17", "2024-01-19"],
-  y: [0.06158661464000001, 0.06185571758],
+  x: ["2024-01-17", "2024-01-19", "2024-01-22"],
+  y: [0.06158661464000001, 0.06185571758, 0.062216658674999994],
   type: 'scatter',
   mode: 'lines+markers',
   name: "assembly/Assembly of non-singular terms of 2048x2048 matrix"
 };
 var line1 = {
-  x: ["2024-01-17", "2024-01-19"],
-  y: [0.021054013697859177, 0.021521716154104947],
+  x: ["2024-01-17", "2024-01-19", "2024-01-22"],
+  y: [0.021054013697859177, 0.021521716154104947, 0.021286997228186732],
   type: 'scatter',
   mode: 'lines+markers',
   name: "assembly/Assembly of non-singular terms of 512x512 matrix"
+};
+var line2 = {
+  x: ["2024-01-22"],
+  y: [0.32227609135],
+  type: 'scatter',
+  mode: 'lines+markers',
+  name: "assembly/Assembly of singular terms of 2048x2048 matrix"
+};
+var line3 = {
+  x: ["2024-01-22"],
+  y: [0.228105190125],
+  type: 'scatter',
+  mode: 'lines+markers',
+  name: "assembly/Assembly of singular terms of 512x512 matrix"
 };
 var layout = {
   showlegend: true,
@@ -22,5 +36,5 @@ var layout = {
   yaxis: {title: 'Time (s)', rangemode: 'tozero'},
   margin: {t: 15}
 };
-Plotly.newPlot('benchall', [line0, line1], layout);
+Plotly.newPlot('benchall', [line0, line1, line2, line3], layout);
 </script>
