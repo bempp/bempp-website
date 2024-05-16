@@ -35,7 +35,9 @@ var layout = {
   legend: {x: 1, yanchor: 'top', xanchor: 'right', y: -0.2},
   xaxis: {title: 'Date'},
   yaxis: {title: 'Time (s)', rangemode: 'tozero'},
-  margin: {t: 15}
+  margin: {t: 15},
+  shapes: [{type: 'line', xref: 'x', yref: 'paper', x0: '2024-05-13', x1: '2024-05-13',y0: 0, y1: 1, line: {color: '#000000', width: 1, dash: 'dash'}}],
+  annotations: [{showarrow: false, text: 'Bempp v0.1.0', xref: 'x', yref: 'paper', x: '2024-05-13', y: 1, xanchor: 'left', yanchor: 'top', textangle: 90}]
 };
 Plotly.newPlot('bench_assembly', [line0_assembly, line1_assembly, line2_assembly, line3_assembly], layout);
 </script>
@@ -104,7 +106,9 @@ var layout = {
   legend: {x: 1, yanchor: 'top', xanchor: 'right', y: -0.2},
   xaxis: {title: 'Date'},
   yaxis: {title: 'Time (s)', rangemode: 'tozero'},
-  margin: {t: 15}
+  margin: {t: 15},
+  shapes: [{type: 'line', xref: 'x', yref: 'paper', x0: '2024-05-13', x1: '2024-05-13',y0: 0, y1: 1, line: {color: '#000000', width: 1, dash: 'dash'}}],
+  annotations: [{showarrow: false, text: 'Kifmm v0.1.0', xref: 'x', yref: 'paper', x: '2024-05-13', y: 1, xanchor: 'left', yanchor: 'top', textangle: 90}]
 };
 Plotly.newPlot('bench_laplace_fmm', [line0_laplace_fmm, line1_laplace_fmm, line2_laplace_fmm, line3_laplace_fmm, line4_laplace_fmm, line5_laplace_fmm, line6_laplace_fmm, line7_laplace_fmm], layout);
 </script>
@@ -173,7 +177,9 @@ var layout = {
   legend: {x: 1, yanchor: 'top', xanchor: 'right', y: -0.2},
   xaxis: {title: 'Date'},
   yaxis: {title: 'Time (s)', rangemode: 'tozero'},
-  margin: {t: 15}
+  margin: {t: 15},
+  shapes: [{type: 'line', xref: 'x', yref: 'paper', x0: '2024-05-13', x1: '2024-05-13',y0: 0, y1: 1, line: {color: '#000000', width: 1, dash: 'dash'}}],
+  annotations: [{showarrow: false, text: 'Kifmm v0.1.0', xref: 'x', yref: 'paper', x: '2024-05-13', y: 1, xanchor: 'left', yanchor: 'top', textangle: 90}]
 };
 Plotly.newPlot('bench_helmholtz_fmm', [line0_helmholtz_fmm, line1_helmholtz_fmm, line2_helmholtz_fmm, line3_helmholtz_fmm, line4_helmholtz_fmm, line5_helmholtz_fmm, line6_helmholtz_fmm, line7_helmholtz_fmm], layout);
 </script>
