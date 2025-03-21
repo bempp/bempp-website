@@ -1,6 +1,10 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.4.0](https://github.com/bempp/bempp-cl/releases/tag/v0.4.0)
+- Updated FEniCSx interface to correctly orient normals so they all point outwards
+- Renamed Python library from bempp to bempp_cl
+
 ## [Bempp-cl 0.3.2](https://github.com/bempp/bempp-cl/releases/tag/v0.3.2)
 - Updated FEniCSx interface to work with the upcoming release 0.9
 - Updated to work with up-to-date versions of Numpy, Scipy and Numba
