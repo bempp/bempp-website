@@ -1,5 +1,5 @@
 ---
-title: Solving your first problem with Bempp
+title: Solving your first problem with Bempp-cl
 ---
 
 This page gives and overview of Bempp, and guides you through solving your first Laplace problem.
@@ -10,12 +10,12 @@ Once you have Bempp installed, open a Jupyter notebook or a Python or IPython te
 ### Importing Bempp
 First, you need to import Bempp.
 
-Bempp is split into two parts: `bempp.api` and `bempp.core`:
-`bempp.api` contains the library's Python functionality and `bempp.core` contains the interfaces to the fast OpenCL (or C++ if you're using the previous version) computational kernel.
-As a user you (almost certainly) want to begin by importing `bempp.api`:
+Bempp is split into two parts: `bempp_cl.api` and `bempp_cl.core`:
+`bempp_cl.api` contains the library's Python functionality and `bempp_cl.core` contains the interfaces to the fast OpenCL (or C++ if you're using the previous version) computational kernel.
+As a user you (almost certainly) want to begin by importing `bempp_cl.api`:
 
 ```python
-import bempp.api
+import bempp_cl.api
 ```
 
 ### Generating a grid
@@ -25,7 +25,7 @@ In this example, we will use a sphere.
 The following code snippet will create your grid.
 
 ```python
-grid = bempp.api.shapes.sphere(h=0.1)
+grid = bempp_cl.api.shapes.sphere(h=0.1)
 grid.plot()
 ```
 
@@ -34,7 +34,7 @@ If you are not using a notebook, you will need to change the plotting backend in
 The following code, for example, will visualise your grid using Paraview.
 
 ```python
-bempp.api.PLOT_BACKEND = "paraview"
+bempp_cl.api.PLOT_BACKEND = "paraview"
 grid.plot()
 ```
 
@@ -52,7 +52,7 @@ In this case, we use a space of piecewise constant polynomials, or order 0 disco
 The following code snippet will create this function space.
 
 ```python
-space = bempp.api.function_space(grid, "DP", 0)
+space = bempp_cl.api.function_space(grid, "DP", 0)
 ```
 
 <!-- Details of other available spaces can be found in the [spaces tutorial](spaces.md). -->
@@ -64,7 +64,7 @@ In this example, we construct a Laplace single layer boundary operator.
 This operator can be defined using the following Python snippet.
 
 ```python
-slp = bempp.api.operators.boundary.laplace.single_layer(space, space, space)
+slp = bempp_cl.api.operators.boundary.laplace.single_layer(space, space, space)
 ```
 
 <!-- More information about operators can be found in the [operators tutorial](operators.md). -->
@@ -72,15 +72,15 @@ slp = bempp.api.operators.boundary.laplace.single_layer(space, space, space)
 ### Constructing a grid function
 Next, we construct a grid function containing your right-hand-side data.
 In this example, we use a Python function to construct our grid function.
-As our function is real-valued, we must use the `@bempp.api.real_callable` decorator so that Bempp can use the correct number types in its compiled code.
+As our function is real-valued, we must use the `@bempp_cl.api.real_callable` decorator so that Bempp can use the correct number types in its compiled code.
 
 ```python
-@bempp.api.real_callable
+@bempp_cl.api.real_callable
 def f(x, n, domain_index, result):
     result[0] = x[0] + 1
 
 
-rhs = bempp.api.GridFunction(space, fun=f)
+rhs = bempp_cl.api.GridFunction(space, fun=f)
 ```
 
 <!-- More information about creating and manipulating functions can be found in the [grid functions tutorial](grid_functions.md). -->
@@ -90,7 +90,7 @@ Now that you have constructed all the necessary objects, you are ready to solve 
 In this case, we use GMRES to solve the problem.
 
 ```python
-sol, info = bempp.api.linalg.gmres(slp, rhs)
+sol, info = bempp_cl.api.linalg.gmres(slp, rhs)
 ```
 
 Finally, you can visualise your solution:

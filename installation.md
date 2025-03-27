@@ -122,7 +122,7 @@ Once you have installed all the requirements, you can install Bempp with the fol
 ```bash
 git clone https://github.com/bempp/bempp-cl
 cd bempp-cl
-python setup.py install
+python -m pip install .
 ```
 
 ### OpenCL
