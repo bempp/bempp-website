@@ -1,6 +1,9 @@
 ---
 title: Changelog
 ---
+## [Bempp-cl 0.4.2](https://github.com/bempp/bempp-cl/releases/tag/v0.4.2)
+- Fix missing cl and h files in release
+
 ## [Bempp-cl 0.4.1](https://github.com/bempp/bempp-cl/releases/tag/v0.4.1)
 - Fix missing cl files in release
 
